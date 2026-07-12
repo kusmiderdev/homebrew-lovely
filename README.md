@@ -4,5 +4,7 @@ Homebrew tap for [Lovely Screenshots](https://lovelyscreenshots.com) — a warm 
 
 ```sh
 brew tap kusmiderdev/lovely
-brew install --cask lovely-screenshots --no-quarantine
+brew trust kusmiderdev/lovely
+brew install --cask lovely-screenshots
+xattr -cr "/Applications/Lovely Screenshots.app"   # one-time (beta is not notarized)
 ```

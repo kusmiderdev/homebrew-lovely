@@ -1,6 +1,6 @@
 cask "lovely-screenshots" do
   version "0.4.0"
-  sha256 "f0e698ee60cf0ffbf367edd862ac56d7b4eb2561eb33c43f53de9c190d7e0502"
+  sha256 "f51ec65c711d2e24178214010dfc365ce222844c0493085b58accfc8258a84c5"
 
   url "https://github.com/kusmiderdev/lovely-screenshots-releases/releases/download/v#{version}/Lovely-Screenshots-#{version}.zip"
   name "Lovely Screenshots"
@@ -10,10 +10,11 @@ cask "lovely-screenshots" do
   app "Lovely Screenshots.app"
 
   caveats <<~EOS
-    This build is not notarized by Apple. Install with:
-      brew install --cask lovely-screenshots --no-quarantine
+    This build is not notarized by Apple (indie beta). After installing, either
+    run once:
+      xattr -cr "/Applications/Lovely Screenshots.app"
     or approve the first launch in System Settings → Privacy & Security
-    ("Open Anyway").
+    ("Open Anyway"). Details: https://lovelyscreenshots.com/install
   EOS
 
   zap trash: [
