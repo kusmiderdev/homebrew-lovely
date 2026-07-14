@@ -1,11 +1,13 @@
 cask "lovely-screenshots" do
-  version "0.4.1"
-  sha256 "e7cc752de8fcb2fc969f60fc3a72a9925146f1e580ed3935619ef4940bcecfe9"
+  version "0.4.2"
+  sha256 "7683c0fee541659fb257369b4022ce9a80b008df1dd040ce065ca36e741d849e"
 
   url "https://github.com/kusmiderdev/lovely-screenshots-releases/releases/download/v#{version}/Lovely-Screenshots-#{version}.zip"
   name "Lovely Screenshots"
   desc "Warm little screenshot studio that lives in your menu bar"
   homepage "https://github.com/kusmiderdev/lovely-screenshots-releases"
+
+  auto_updates true   # the app updates itself via Sparkle; brew just does the first install
 
   app "Lovely Screenshots.app"
 
