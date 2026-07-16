@@ -1,6 +1,6 @@
 cask "lovely-screenshots" do
-  version "0.5.8"
-  sha256 "55c07bfbec389c76bb9d321120603fc7fbe8526f5b81317b3f10c2909cbf5fca"
+  version "0.5.9"
+  sha256 "100e0a4fcb999833f2cbf0206f147319037a0ecb9992c60f7c5cc19e2880051c"
 
   url "https://github.com/kusmiderdev/lovely-screenshots-releases/releases/download/v#{version}/Lovely-Screenshots-#{version}.zip"
   name "Lovely Screenshots"
